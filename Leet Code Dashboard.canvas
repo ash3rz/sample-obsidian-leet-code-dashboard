@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"06a7acd00b2a31d9","type":"group","x":-460,"y":-540,"width":740,"height":540,"color":"3","label":"Homework"},
+		{"id":"197de41a9e6e1539","type":"file","file":"Bases/Leet Code Tables.base","subpath":"#Due","x":-440,"y":-420,"width":700,"height":400},
+		{"id":"30a7eaeea354f48e","type":"file","file":"Bases/Leet Code Tables.base","subpath":"#Completed","x":-390,"y":180,"width":600,"height":380,"color":"4"},
+		{"id":"257602c1fb75c91f","type":"text","text":"Problems Completed","x":-215,"y":80,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"dec602816479d781","fromNode":"257602c1fb75c91f","fromSide":"bottom","toNode":"30a7eaeea354f48e","toSide":"top"}
+	]
+}

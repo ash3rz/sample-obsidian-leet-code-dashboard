@@ -1,0 +1,39 @@
+filters:
+  and:
+    - file.inFolder("LeetCodeProblems")
+formulas:
+  Due Date: date(note["Last Reviewed"] + note["Revisit Cadence"])
+  Is Due: formula["Due Date"] <= today()
+  Untitled: ""
+views:
+  - type: table
+    name: All Problems
+    order:
+      - file.name
+      - Last Reviewed
+      - Revisit Cadence
+      - formula.Due Date
+      - formula.Is Due
+      - formula.Untitled
+  - type: cards
+    name: Due
+    filters:
+      and:
+        - formula["Is Due"] == true
+    order:
+      - file.name
+      - Last Reviewed
+      - Revisit Cadence
+      - formula.Due Date
+      - formula.Is Due
+  - type: cards
+    name: Completed
+    filters:
+      and:
+        - formula["Is Due"] == false
+    order:
+      - file.name
+      - Last Reviewed
+      - Revisit Cadence
+      - formula.Due Date
+      - formula.Is Due
